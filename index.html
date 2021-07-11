@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Realtime Face Recognizer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body background="background img.jpg">
+        <center>
+            <h3 class="btn btn-danger heading">Realtime Face Recognizer
+                <hr>
+                <center><!--keep heading div in center, as we have added bootstrap classes-->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+                        Model can Recognize
+                        <br>
+                        <div class="btn btn-success object_list">
+                            <ol><!--using an ordered list to display names-->
+                                <li>Myself</li>
+                                <li>Mother</li>
+                                <li>Father</li>
+                                <li>Maternal Grandmother</li>
+                                <li>Maternal Grandfather</li>
+                                <li>Paternal Grandmother</li>
+                                <li>Paternal Grandfather</li>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </h3>
+
+            <br>
+
+            <h3 class="btn btn-danger object">Object: <span id="object"></span></h3>
+            <br>
+            <h3 class="btn btn-danger accuracy">Accuracy: <span id="accuracy"></span></h3>
+            <br><br>
+            <div id="filter">
+                
+            </div>
+            <div class="copyright_footer">
+                Developed by - Srijoni Baisya
+            </div>
+        </center>
+    </body>
+</html>
